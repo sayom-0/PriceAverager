@@ -10,7 +10,8 @@
         android:id="@+id/calcButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:layout_marginBottom="16dp"
+        android:text="@string/calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -19,9 +20,11 @@
         android:id="@+id/assetValue0"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:paddingHorizontal="4dp"
+        android:paddingHorizontal="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/assetValHeader" />
 
@@ -29,9 +32,11 @@
         android:id="@+id/capitalValue0"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:paddingHorizontal="4dp"
+        android:paddingHorizontal="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/capitalHeader" />
 
@@ -39,7 +44,8 @@
         android:id="@+id/addRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Transaction"
+        android:layout_marginBottom="8dp"
+        android:text="@string/add_transaction"
         app:layout_constraintBottom_toTopOf="@+id/calcButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -48,7 +54,8 @@
         android:id="@+id/priceAverageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/addRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -57,9 +64,10 @@
         android:id="@+id/assetValHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:paddingHorizontal="8dp"
         android:paddingVertical="8dp"
-        android:text="Asset Value"
+        android:text="@string/asset_value"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -68,9 +76,10 @@
         android:id="@+id/capitalHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:paddingHorizontal="8dp"
         android:paddingVertical="8dp"
-        android:text="Capital"
+        android:text="@string/capital"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

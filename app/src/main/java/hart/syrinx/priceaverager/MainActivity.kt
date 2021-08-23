@@ -24,9 +24,17 @@ class MainActivity : AppCompatActivity()
 
     fun calculate()
     {
+        // Calculate and display
         val priceAverage: Int = value / (entrys * (totalCapital / entrys))
         binding.priceAverageText.text = priceAverage.toString()
 
+        // Reset for next run
+        entrys = 0
+        value = 0
+        totalCapital = 0
+
+        binding.assetsHistorical.text = ""
+        binding.capitalHistorical.text = ""
     }
 
     fun addTransaction()
